@@ -2,13 +2,31 @@
 'use strict';
 
 // Data: a group of people
-const people = [
+const PEOPLELIST = [
     { name: "Jacob", interest: "Board Games" },
     { name: "James", interest: "Music" }
 ];
 
 // Class for an individual person
-
+class Person extends React.Component {
+    render() {
+        return (
+            <div class="person">
+                <p>Hello, my name is {this.props.name} and I am interested in {this.props.interest}.</p>
+            </div>          
+        );
+    }
+}
 // Class to represent a group of people
-
-// Render your component in the `main` section
+class People extends React.Component {
+    render() {
+        return (this.props.group.map((d) => {
+            return <Person key={d.name} name={d.name} interest={d.interest} />
+        }))
+    }
+}
+// Render your component in the `main` sections
+ReactDOM.render(
+    <People group={PEOPLELIST} />,
+    document.querySelector('main')
+); 

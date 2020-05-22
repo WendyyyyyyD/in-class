@@ -1,4 +1,4 @@
-// Import Components
+ // Import Components
 import React, { Component } from 'react';
 import { range } from 'lodash';
 import { MarkSeries, XYPlot, HorizontalGridLines, VerticalGridLines, XAxis, YAxis } from 'react-vis';
@@ -26,7 +26,7 @@ class App extends Component {
     render() {
         // Compute a set of points from state
         let points = range(this.state.numPoints).map((d) => ({
-            x: Math.random() * 100,
+            x: Math.random() * 100, 
             y: Math.random() * 100
         }));
 
