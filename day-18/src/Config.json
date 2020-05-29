@@ -1,0 +1,11 @@
+{ "config" : {
+    "apiKey": "AIzaSyAa-0cZzCbK8KmqPuOcZfp8HA9E6OIWrZA",
+    "authDomain": "info340-inclass17.firebaseapp.com",
+    "databaseURL": "https://info340-inclass17.firebaseio.com",
+    "projectId": "info340-inclass17",
+    "storageBucket": "info340-inclass17.appspot.com",
+    "messagingSenderId": "478817978009",
+    "appId": "1:478817978009:web:dcb375019bfc523cdd5a08",
+    "measurementId": "G-L6R9F1BQ6W"
+    }
+}
